@@ -1,4 +1,4 @@
-const { queueConnection } = require("./connect");
+const { queueConnection } = require("./../utils/connect");
 async function sendMessage() {
   try {
     const { channel, queue } = await queueConnection();
